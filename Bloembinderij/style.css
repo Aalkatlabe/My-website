@@ -1,0 +1,25 @@
+.jumbotron{
+    background-image: url(imgs/cover.jpg);
+    background-size: cover;
+    color: #000000;
+}
+p{
+    font-weight: bolder!important;
+}
+.card-body{
+    padding: 0.25rem;
+}
+p{
+    font-weight: inherit!important;
+    font-size: 13px!important;
+    text-align: start;
+}
+.card-title{
+    font-size: 18px;
+    text-align: start;
+}
+address{
+    font-weight: inherit!important;
+    font-size: 13px!important;
+    text-align: start;
+}
