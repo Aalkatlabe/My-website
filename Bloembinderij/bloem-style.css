@@ -1,0 +1,13 @@
+/*-----------------------------------------jumbotron-------------------------------------------------*/
+.jumbotron{
+    background-image: url(imgs/cover.jpg);
+    background-size: cover;
+    color: #000000;
+}
+.lead{
+    font-weight: bolder;
+}
+/*-------------------------------------------Navbar------------------------------------------------------*/
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
