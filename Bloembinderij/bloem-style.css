@@ -11,3 +11,7 @@
 .navbar-dark .navbar-nav .nav-link{
     color: #fff;
 }
+/*-------------------------------------------Breadcrumb------------------------------------------------------*/
+.breadcrumb{
+    margin-bottom: 0rem;
+}
