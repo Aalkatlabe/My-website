@@ -52,54 +52,89 @@ document.addEventListener('click', function(e){
 
 let darkMode = false;
 const changeHandler = function(event){
-    if(darkMode){
-        darkMode = false;
-        button.textContent = "Dark mode off";
-    }
-    else{
-        darkMode = true;
-        button.textContent = "Dark mode on";
-    }
+  if(darkMode){
+      darkMode = false;
+      button.textContent = "Dark mode on";
+  }
+  else{
+      darkMode = true;
+      button.textContent = "Dark mode off";
+  }
+};
+
+const changeManualText = function(event){
+  if(darkMode){
+      darkMode = false;
+      buttonManual.textContent = "Manual on";
+  }
+  else{
+      darkMode = true;
+      buttonManual.textContent = "Manual off";
+  }
 };
 
 const button = document.querySelector(".btn-dark");
-const toggleTheme =function(){
-    const elements = document.querySelectorAll('section, .theSidebar, .card, .list-group-item');
-    console.log(elements);
-    for ( let i = 0; i < elements.length; i++){
-     const element = elements[i];
-     element.classList.toggle('dark-mode');
-    }
-    
-    }
 
-   
+
+
+
+
+
+const buttonManual = document.querySelector(".manual-on");
+let darkModeTheme = JSON.parse(localStorage.getItem("darkModeTheme"));
+let manualTheme = JSON.parse(localStorage.getItem("manualTheme"));
+
+const toggleManual = function () {
+  manualTheme = !manualTheme;
+  localStorage.setItem("manualTheme", manualTheme);
+  console.log(manualTheme);
+  
+  
+}
+
+
+
+
+
+const toggleTheme =function(){
+  const elements = document.querySelectorAll('section, .theSidebar, .card, .list-group-item');
+  console.log(elements);
+  for ( let i = 0; i < elements.length; i++){
+   const element = elements[i];
+   element.classList.toggle('dark-mode');
+  }
+  localStorage.setItem("darkModeTheme", darkModeTheme);
+  }
+
+ 
 button.addEventListener('click', toggleTheme)
 button.addEventListener('click', changeHandler)
-
+buttonManual.addEventListener("click", toggleManual);
+buttonManual.addEventListener("click", changeManualText);
 
 //------------------------timer---------------------------------------------------------------------------//
 const checkTheme = function(){
-    const date = new Date();
-    console.log(date);
-    if(date.getHours() > 7 && date.getHours() < 17){
-        if(darkMode === true){
-        toggleTheme();
-        changeHandler();
-        }
-    }
-    else{
-        if(darkMode === false){
-            toggleTheme();
-            changeHandler();
-        
-        }
-        
-    }
-   
+  if (manualTheme) return;
+  const date = new Date();
+  console.log(date.getSeconds());
+  if(date.getSeconds() > 7 && date.getSeconds() < 17){
+      if(darkMode === true){
+      toggleTheme();
+      changeHandler();
+      }
+  }
+  else{
+      if(darkMode === false){
+          toggleTheme();
+          changeHandler();
+      
+      }
+      
+  }
+ 
 };
 
-// setInterval(checkTheme, 1000);
+setInterval(checkTheme, 1000);
 
 
 //------------------------------------------------------------------------------------------------------------///
