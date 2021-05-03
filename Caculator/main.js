@@ -16,47 +16,47 @@ const substractGelijk = document.querySelector('.substract-gelijk');
 /* ------------------------Calculate------------------------*/
 const buttonPrimary = document.querySelector('.calculator');
 
-buttonPrimary.addEventListener('click', function(){
+buttonPrimary.addEventListener('click', function () {
 
     multiplyHandeler();
     divideHandeler();
     addHandeler();
     substractHandeler();
-    });
+});
 
-function multiplyHandeler(){
+function multiplyHandeler() {
     for (let i = 0; i < multiply.length; i++) {
         multiplyGelijk.textContent = Number(multiply[0].value) * Number(multiply[1].value);
-        
+
     }
 }
 
-function divideHandeler(){
+function divideHandeler() {
     for (let i = 0; i < divide.length; i++) {
-        if (divide[0].value === "" || divide[1].value === ""){
+        if (divide[0].value === "" || divide[1].value === "") {
             divideGelijk.textContent = 0;
         }
-        else if(Number(divide[1].value) === 0){
+        else if (Number(divide[1].value) === 0) {
             divideGelijk.textContent = "Kan niet door nul delen";
         }
-        else{
-            divideGelijk.textContent = Number(divide[0].value) / Number(divide[1].value); 
+        else {
+            divideGelijk.textContent = Number(divide[0].value) / Number(divide[1].value);
         }
-   
-}
-}
 
-function addHandeler(){
-    for (let i = 0; i < add.length; i++) {
-        addGelijk.textContent = Number(add[0].value) + Number(add[1].value);
-        
     }
 }
 
-function substractHandeler(){
+function addHandeler() {
+    for (let i = 0; i < add.length; i++) {
+        addGelijk.textContent = Number(add[0].value) + Number(add[1].value);
+
+    }
+}
+
+function substractHandeler() {
     for (let i = 0; i < substract.length; i++) {
         substractGelijk.textContent = Number(substract[0].value) - Number(substract[1].value);
-        
+
     }
 }
 
@@ -65,13 +65,13 @@ const inputFahrenheit = document.querySelector('.inputFahrenheit');
 const outputCelcius = document.querySelector('.outputCelcius');
 const buttonDanger = document.querySelector('.temperature');
 
-buttonDanger.addEventListener('click', function(){
-    if(inputFahrenheit.value === ""){
+buttonDanger.addEventListener('click', function () {
+    if (inputFahrenheit.value === "") {
         outputCelcius.textContent = 0;
     }
-    else{
-    outputCelcius.textContent = (inputFahrenheit.value - 32) / 1.8;
-}
+    else {
+        outputCelcius.textContent = (inputFahrenheit.value - 32) / 1.8;
+    }
 })
 
 /* Tip Calculator */

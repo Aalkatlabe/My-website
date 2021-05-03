@@ -1,38 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator Cpoy</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <main class="calculator-main">
-      <section class="calculator-container">
-        <h1>Calculator </h1>
-        <div class="calculator-grid">
-          <!-- Multiply -->
-          <input class="input multiply" type="number" /><span>x</span
-          ><input class="input multiply" type="number" /><span>=</span><span class="multiply-gelijk">0</span>
-          <!-- Divide -->
-          <input class="input divide" type="number" /><span>/</span
-          ><input class="input divide" type="number" /><span>=</span><span class="divide-gelijk"> 0</span>
-          <!-- Add -->
-          <input class="input add" type="number" /><span>+</span
-          ><input class="input add" type="number" /><span>=</span><span class="add-gelijk">0</span>
-          <!-- Substract -->
-          <input class="input substract" type="number" /><span>-</span
-          ><input class="input substract" type="number" /><span>=</span><span class="substract-gelijk">0</span>
-          <!-- Calculate -->
-          <button class="button calculator">Calculate</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <span class="navbar-brand mb-0 h2"> <img class="img-fluid" src="imgs/codeing3.png" alt="Logo" width="150px"
+        height="auto"></span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" href="/index.html">
+            Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/Alaa_Alkatlabe">Contact</a>
+        </li>
+        <div class="dropdown show">
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Projects</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="/Bloembinderij/index.html">Bloembinderij</a>
+              <a class="dropdown-item" href="/Sportschool/index.html">Sportschool</a>
+              <a class="dropdown-item" href="/schuifpuzzel 4/index.html">Schuifpuzzel JS</a>
+              <a class="dropdown-item" href="https://github.com/Aalkatlabe/Triviant">Triviant C#</a>
+              <a class="dropdown-item" href="https://github.com/Aalkatlabe/ijsshopSundays">ijsshopSundays C#</a>
+
+
+            </div>
+          </li>
         </div>
-      </section>
-      <!-- Temperature Calculator -->
-      <div class="container-temperature">
+
+      </ul>
+    </div>
+  </nav>
+  <main class="calculator-main">
+    <section class="calculator-container">
+      <h1>Calculator </h1>
+      <div class="calculator-grid">
+        <!-- Multiply -->
+        <input class="input multiply" type="number" /><span>x</span><input class="input multiply"
+          type="number" /><span>=</span><span class="multiply-gelijk">0</span>
+        <!-- Divide -->
+        <input class="input divide" type="number" /><span>/</span><input class="input divide"
+          type="number" /><span>=</span><span class="divide-gelijk"> 0</span>
+        <!-- Add -->
+        <input class="input add" type="number" /><span>+</span><input class="input add"
+          type="number" /><span>=</span><span class="add-gelijk">0</span>
+        <!-- Substract -->
+        <input class="input substract" type="number" /><span>-</span><input class="input substract"
+          type="number" /><span>=</span><span class="substract-gelijk">0</span>
+        <!-- Calculate -->
+        <button class="button calculator">Calculate</button>
+      </div>
+    </section>
+    <!-- Temperature Calculator -->
+    <div class="container-temperature">
       <h2>Temperature Converter</h2>
       <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
-      
+
       <p>
         <label>Fahrenheit</label><br>
         <input class="input inputFahrenheit" type="number">
@@ -40,61 +87,75 @@
       <button class="button temperature">Calculate</button>
       <p>Celcius: <span class="outputCelcius"></span></p>
     </div>
-    </main>
-    <!-- Tip Calculator -->
-    <div class="container">
-      <div class="header">
-        <h2>Tip Calculator</h2>
-      </div>
-      <form>
-        <p><b>How much is the bill?</b></p>
-        <input type="number" id="amount" placeholder="Bill Amount" maxlength="9">
-        <p><b>How much would you like to tip?</b></p>
-        <select id="tip">
-          <option value="0.05">5%</option>
-          <option value="0.1">10%</option>
-          <option value="0.15">15%</option>
-          <option value="0.2">20%</option>
-          <option value="0.3">30%</option>
-        </select>
-        <p><b>How many people are sharing the bill?</b></p>
-        <select id="numberPeople">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
-          <option value="18">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
-        </select>
-      </form>
-      <button class="calc" onclick="calculateTip()">Calculate</button>
-      <div id="single">
-        <p><b>Tip: €<span id="tipAmount"></span></b></p>
-        <p><b>Total: €<span id="billTotal"></span></b></p>
-      </div>
-      <div id="multiple">
-        <p><b>Tip Per Person: €<span id="totalTipMultiple"></span></b></p>
-        <p><b>Total Per Person: €<span id="totalAmountEach"></span></b></p>
-        <p><b>Bill Total: €<span id="billTotalmultiple"></span></b></p>
-      </div>
+  </main>
+  <!-- Tip Calculator -->
+  <div class="container">
+    <div class="header">
+      <h2>Tip Calculator</h2>
     </div>
-    <!--------------------------->
+    <form>
+      <p><b>How much is the bill?</b></p>
+      <input type="number" id="amount" placeholder="Bill Amount" maxlength="9">
+      <p><b>How much would you like to tip?</b></p>
+      <select id="tip">
+        <option value="0.05">5%</option>
+        <option value="0.1">10%</option>
+        <option value="0.15">15%</option>
+        <option value="0.2">20%</option>
+        <option value="0.3">30%</option>
+      </select>
+      <p><b>How many people are sharing the bill?</b></p>
+      <select id="numberPeople">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+      </select>
+    </form>
+    <button class="calc" onclick="calculateTip()">Calculate</button>
+    <div id="single">
+      <p><b>Tip: €<span id="tipAmount"></span></b></p>
+      <p><b>Total: €<span id="billTotal"></span></b></p>
+    </div>
+    <div id="multiple">
+      <p><b>Tip Per Person: €<span id="totalTipMultiple"></span></b></p>
+      <p><b>Total Per Person: €<span id="totalAmountEach"></span></b></p>
+      <p><b>Bill Total: €<span id="billTotalmultiple"></span></b></p>
+    </div>
+  </div>
 
-    
-    <script src="main.js"></script>
-  </body>
+  <footer id="footer">
+    <p>Copyright © 2021</p>
+</footer>
+  <!--------------------------->
+
+
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

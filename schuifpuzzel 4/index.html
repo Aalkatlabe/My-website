@@ -1,51 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Puzzel</title>
-   
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="Css/style.css">
+
+<head>
+  <title>Puzzel</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="Css/style.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <span class="navbar-brand mb-0 h2"> <img class="img-fluid" src="imgs/codeing3.png" alt="Logo" width="150px" height="auto"></span>
     
-  </head>
-  <body>
-    <h2>Schuifpuzzel</h2><hr>
-      <div id="grid-container">
-       
-                 
-                      <div draggable="true" class="grid-item">
-                        <img src="imgs/owl.jpg" alt="The owl" class="pice1">
-                      </div>
-                      <div draggable="true" class="grid-item">
-                        <img src="imgs/owl.jpg" alt="The owl" class="pice2">
-                      </div>
-                      <div draggable="true" class="grid-item">
-                        <img src="imgs/owl.jpg" alt="The owl" class="pice3">
-                      </div>
-                      <div draggable="true" class="grid-item">
-                        <img src="imgs/owl.jpg" alt="The owl" class="pice4">
-                      </div>
-                      <div draggable="true" class="grid-item">
-                        <img src="imgs/owl.jpg" alt="The owl" class="pice5">
-                      </div>
-                      <div draggable="true" class="grid-item">
-                        <img src="imgs/owl.jpg" alt="The owl" class="pice6">
-                      </div>
-                      <div draggable="true" class="grid-item">
-                        <img src="imgs/owl.jpg" alt="The owl" class="pice7">
-                      </div>
-                      <div draggable="true" class="grid-item">
-                        <img src="imgs/owl.jpg" alt="The owl" class="pice8">
-                      </div>
-                      <div draggable="true" class="grid-item">
-                        <img src="imgs/owl.jpg" alt="The owl" class="pice9">
-                      </div>
-                      </div>
-      
-    <script src="Javascript/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" href="/index.html">
+            Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/Alaa_Alkatlabe">Contact</a>
+        </li>
+        <div class="dropdown show">
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="/Bloembinderij/index.html">Bloembinderij</a>
+                <a class="dropdown-item" href="/Sportschool/index.html">Sportschool</a>
+                <a class="dropdown-item" href="/Caculator/index.html">Calculator JS</a>
+                <a class="dropdown-item" href="https://github.com/Aalkatlabe/Triviant">Triviant C#</a>
+                <a class="dropdown-item" href="https://github.com/Aalkatlabe/ijsshopSundays">ijsshopSundays C#</a>
+                
+                
+              </div>
+          </li>
+        </div>
+        
+      </ul>
+    </div>
+  </nav>
+  <h2>Schuifpuzzel</h2>
+  <hr>
+  <div id="grid-container">
+
+
+    <div draggable="true" class="grid-item">
+      <img src="imgs/owl.jpg" alt="The owl" class="pice1">
+    </div>
+    <div draggable="true" class="grid-item">
+      <img src="imgs/owl.jpg" alt="The owl" class="pice2">
+    </div>
+    <div draggable="true" class="grid-item">
+      <img src="imgs/owl.jpg" alt="The owl" class="pice3">
+    </div>
+    <div draggable="true" class="grid-item">
+      <img src="imgs/owl.jpg" alt="The owl" class="pice4">
+    </div>
+    <div draggable="true" class="grid-item">
+      <img src="imgs/owl.jpg" alt="The owl" class="pice5">
+    </div>
+    <div draggable="true" class="grid-item">
+      <img src="imgs/owl.jpg" alt="The owl" class="pice6">
+    </div>
+    <div draggable="true" class="grid-item">
+      <img src="imgs/owl.jpg" alt="The owl" class="pice7">
+    </div>
+    <div draggable="true" class="grid-item">
+      <img src="imgs/owl.jpg" alt="The owl" class="pice8">
+    </div>
+    <div draggable="true" class="grid-item">
+      <img src="imgs/owl.jpg" alt="The owl" class="pice9">
+    </div>
+  </div>
+
+  <footer id="footer">
+    <p>Copyright © 2021</p>
+</footer>
+
+  <script src="Javascript/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
