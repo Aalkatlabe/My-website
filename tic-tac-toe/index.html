@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boter Kaas eieren</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <h1 id="portfolio"><i class="fa fa-undo" aria-hidden="true"></i> <a href="../index.html">Mijn Portfolio </a></h1>
+  <header>
+    <h1>Tic Tac Toe</h1>
+    <span>ofwel boter kaas en eieren</span>
+  </header>
+  <main>
+    <div>
+      <p>Player 1: <span class="player-one-name"></span></p>
+      <p>Symbol: <span class="player-one-symbol"></span></p>
+    </div>
+    <!-- 
+          Make a board (class .board) with fields (class .field)
+          Do not forget to add styling (grid layout)
+          
+        -->
+    <div class="board">
+      <div class="field"></div>
+      <div class="field"></div>
+      <div class="field"></div>
+      <div class="field"></div>
+      <div class="field"></div>
+      <div class="field"></div>
+      <div class="field"></div>
+      <div class="field"></div>
+      <div class="field"></div>
+    </div>
+    <h2 class="game-status"></h2>
+
+    <div>
+      <p>player 2: <span class="player-two-name"></span></p>
+      <p>Symbol: <span class="player-two-symbol"></span></p>
+    </div>
+  </main>
+  <div></div>
+  <button class="reset-btn">reset</button>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
