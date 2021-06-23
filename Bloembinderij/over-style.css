@@ -1,21 +1,29 @@
 /*-----------------------------------------jumbotron-------------------------------------------------*/
-.jumbotron{
+
+.jumbotron {
     background-image: url(imgs/cover.jpg);
     background-size: cover;
     color: #000000;
 }
-.lead{
+
+.lead {
     font-weight: bolder;
 }
+
 /*-------------------------------------------Navbar------------------------------------------------------*/
-.navbar-dark .navbar-nav .nav-link{
+
+.navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
+
 /*-------------------------------------------Breadcrumb------------------------------------------------------*/
-.breadcrumb{
+
+.breadcrumb {
     margin-bottom: 0rem;
 }
+
 /*-------------------------------------------over-article------------------------------------------------------*/
+
 .over-article {
     padding-top: 1.22222rem;
     position: relative;
@@ -28,15 +36,17 @@
     margin-left: .83333rem;
     margin-right: .83333rem;
 }
+
 .over-article .over-image {
     -ms-grid-row-align: center;
     align-self: center;
 }
+
 .h1, h1 {
     font-size: 2.5rem;
     text-align: center;
 }
-p{
+
+p {
     text-align: center;
 }
-

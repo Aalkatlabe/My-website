@@ -1,17 +1,23 @@
 /*-----------------------------------------jumbotron-------------------------------------------------*/
-.jumbotron{
+
+.jumbotron {
     background-image: url(imgs/cover.jpg);
     background-size: cover;
     color: #000000;
 }
-.lead{
+
+.lead {
     font-weight: bolder;
 }
+
 /*-------------------------------------------Navbar------------------------------------------------------*/
-.navbar-dark .navbar-nav .nav-link{
+
+.navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
+
 /*-------------------------------------------Breadcrumb------------------------------------------------------*/
-.breadcrumb{
+
+.breadcrumb {
     margin-bottom: 0rem;
 }
