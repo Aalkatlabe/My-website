@@ -106,6 +106,7 @@ label {
   height: 25px;
   outline: none;
   margin-top: -20px;
+  border-radius: 10px;
 }
 
 .grid-container-rooster {
@@ -247,4 +248,15 @@ hr {
 #portfolio>a {
   color: rgba(26, 55, 185, 0.842);
   text-decoration: none;
+}
+.exempl{
+  text-align: center;
+  color: #2d04c0;
+  font-size: 12px;
+  border: solid #89253e 1px ;
+  margin: 0 auto;
+  padding: 0px 70px;
+  width: 200px;
+  opacity: 60%;
+  font-weight: bolder;
 }
